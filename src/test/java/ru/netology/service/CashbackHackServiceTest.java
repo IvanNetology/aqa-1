@@ -1,13 +1,11 @@
 package ru.netology.service;
 
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
     CashbackHackService cashbackHackService = new CashbackHackService();
 
-    @Test
+    @org.junit.Test
     public void shouldWhereAmount0() {
         int amount = 0;
 
@@ -17,7 +15,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @Test
+    @org.junit.Test
     public void shouldWhereAmount999() {
         int amount = 999;
 
@@ -27,7 +25,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @Test
+    @org.junit.Test
     public void shouldWhereAmount1000() {
         int amount = 1000;
 
@@ -37,7 +35,7 @@ public class CashbackHackServiceTest {
         assertEquals(expected, actual);
     }
 
-    @Test
+    @org.junit.Test
     public void shouldWhereAmount1001() {
         int amount = 1001;
 
